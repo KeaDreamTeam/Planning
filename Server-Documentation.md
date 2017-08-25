@@ -160,7 +160,7 @@ This post creates a new comment in the comments table, associating the user who 
   * In case of server error, the header status code is a 5xx error code and the response body contains an error object.
 
 
-### Create new user
+### Create a new user
 
 | Method | Endpoint | Usage | Returns |
 | ------ | -------- | ----- | ------- |
@@ -187,7 +187,7 @@ The post request will add a new user row to the user table based on the form inp
 
 ([back to summary](#summary))  
 
-### Login as user
+### Login as a user
 
 | Method | Endpoint | Usage | Returns |
 | ------ | -------- | ----- | ------- |
