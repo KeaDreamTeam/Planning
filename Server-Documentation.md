@@ -13,9 +13,9 @@ API for use with the What's For Lunch app project.
 ##### The API can:
 | Task | Method | Requires authentication? |
 | ------ | -------- | -------- |
-| [Return a list of all restaurants](#Return-a-list-of-all-restaurants) | GET | no |
-| [Return all comments on a specified restaurant](#Get-all-comments-on-a-specified-restaurant) | GET | no |
-| [Return all comment entries by a specific user](#Return-all-comment-entries-by-a-specific-user) | GET | no |
+| [Return a list of all restaurants](#return-a-list-of-all-restaurants) | GET | no |
+| [Return all comments on a specified restaurant](#get-all-comments-on-a-specified-restaurant) | GET | no |
+| [Return all comment entries by a specific user](#return-all-comment-entries-by-a-specific-user) | GET | no |
 | [Add a new comment to a specified restaurant](#add-a-new-comment-to-an-entry) | POST | yes |
 | [Create a new user](#) | POST | no |
 | [Log in as a user](#) | POST | yes |
