@@ -1,3 +1,8 @@
+# What's For Lunch?
+
+## Restaurants' list
+
+
 - Midnight Espresso: Address - 178 cuba street, Wellington (Lots of vegan options)
 
 - Deluxe cafe: Address - 10 Kent Terrace, Wellington (Lots of vegan options)
@@ -64,3 +69,13 @@ Address: 39 Abel Smith Street, Wellington (Lots of vegan options)
 - The Arborist Rooftop Bar: Address - 166 Willis St, Wellington (Some vegan options)
 
 - Sweet Release: Address - Shop 7, 148 Willis Street, Wellington (100% vegan)
+
+
+#### App Authors
+
+* Usha MacDonald
+* Magda Gierg
+* Ania Podhajska
+
+##### Document Author
+* Usha MacDonald
