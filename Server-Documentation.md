@@ -17,8 +17,8 @@ API for use with the What's For Lunch app project.
 | [Return all comments on a specified restaurant](#get-all-comments-on-a-specified-restaurant) | GET | no |
 | [Return all comment entries by a specific user](#return-all-comment-entries-by-a-specific-user) | GET | no |
 | [Add a new comment to a specified restaurant](#add-a-new-comment-to-an-entry) | POST | yes |
-| [Create a new user](#) | POST | no |
-| [Log in as a user](#) | POST | yes |
+| [Create a new user](#create-a-new-user) | POST | no |
+| [Log in as a user](#log-in-as-a-user) | POST | yes |
 
 ### Return a list of all restaurants
 | Method | Endpoint | Usage | Returns |
