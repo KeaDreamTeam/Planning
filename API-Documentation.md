@@ -2,19 +2,21 @@
 
 #### Authors
 
+* Ania Podhajska
 * Magda Gierg
 * Usha MacDonald
-* Ania Podhajska
 
 ## Summary
 
 API for use with the What's For Lunch app project.
+Project repo: https://github.com/KeaDreamTeam/FinalProject
 
 ##### The API can:
 | Task | Method | Requires authentication? |
 | ------ | -------- | -------- |
 | [Return a list of all restaurants](#return-a-list-of-all-restaurants) | GET | no |
 | [Return all comments on a specified restaurant](#get-all-comments-on-a-specified-restaurant) | GET | no |
+| [Return all ratings on a specified restaurant](#get-all-ratings-on-a-specified-restaurant) | GET | no |
 | [Return all comment entries by a specific user](#return-all-comment-entries-by-a-specific-user) | GET | no |
 | [Add a new comment to a specified restaurant](#add-a-new-comment-to-a-specified-restaurant) | POST | yes |
 | [Create a new user](#create-a-new-user) | POST | no |
@@ -70,7 +72,7 @@ The server will return an object structured as following
       },      
       ]
 
-### Get all comments on a specified restaurant
+### Return all comments on a specified restaurant
 
 | Method | Endpoint | Usage | Returns |
 | ------ | -------- | ----- | ------- |
@@ -106,6 +108,23 @@ The server will return an object structured as following
         created_at: "2017-08-20 22:52:12"
         }
       ]
+
+### Return all ratings on a specified restaurant
+
+| Method | Endpoint | Usage | Returns |
+| ------ | -------- | ----- | ------- |
+| GET   | `/api/restaurants/:restaurant_id/ratings` | get all ratings on a restaurant| ratings object |
+
+This get route get will return an object associated to the specified restaurant's positive and negative rating. The rating key in comments is a boolean 'is_pos', each comment has either true or false rating. The sum count is based on all users' comments submitted that include positive or negative rating.
+
+The server will return an object structured as following
+
+      {
+        positive_vote: 5,
+        negative_votes: 9,
+        restaurant_name: DreamTeamRestaurant
+      }
+
 
 ### Return all comment entries by a specific user
 
@@ -179,9 +198,10 @@ The post object must take the form:
 
   * On success, the HTTP status code in the response header is 201 ('Created').
   * If the data passed in is incorrect, a 400 'Bad Response' HTTP status code will be returned.
+  * If the user already exists, a 400 HTTP status code and message 'user already exists!' will be returned.
   * In case of server error, the header status code is a 5xx error code and the response body contains an error object.
 
-The post request will add a new user row to the user table based on the form inputs. It will reject the request if the username is already taken, and return "false". The password will be hashed, and the database stores only this hashed version. If the user creation is successful, that user's ID will be returned, e.g.:
+The post request will add a new user row to the user table based on the form inputs. It will reject the request if the username is already taken. The password will be hashed, and the database stores only this hashed password version. If the user creation is successful, that user's ID will be returned, e.g.:
 
     { user_id: 15 }
 
@@ -204,7 +224,7 @@ The post object must take the form:
 
 ##### Status Codes:
   * On success, the HTTP status code in the response header is 200 ('OK').
-  * If the login information is invalid (username doesn't exist / password is incorrect), a 401 'Unauthorized' HTTP status code will be returned.
+  * If the login information is invalid (username doesn't exist / password is incorrect), a 401 'Unauthorised' HTTP status code will be returned.
   * If the data passed in is incorrect, a 400 'Bad Response' HTTP status code will be returned.
   * In case of server error, the header status code is a 5xx error code and the response body contains an error object.
 
