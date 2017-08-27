@@ -15,12 +15,12 @@ Project repo: https://github.com/KeaDreamTeam/FinalProject
 | Task | Method | Requires authentication? |
 | ------ | -------- | -------- |
 | [Return a list of all restaurants](#return-a-list-of-all-restaurants) | GET | no |
-| [Return all comments on a specified restaurant](#get-all-comments-on-a-specified-restaurant) | GET | no |
-| [Return all ratings on a specified restaurant](#get-all-ratings-on-a-specified-restaurant) | GET | no |
+| [Return all comments on a specified restaurant](#return-all-comments-on-a-specified-restaurant) | GET | no |
+| [Return all ratings on a specified restaurant](#return-all-ratings-on-a-specified-restaurant) | GET | no |
 | [Return all comment entries by a specific user](#return-all-comment-entries-by-a-specific-user) | GET | no |
 | [Add a new comment to a specified restaurant](#add-a-new-comment-to-a-specified-restaurant) | POST | yes |
 | [Create a new user](#create-a-new-user) | POST | no |
-| [Log in as a user](#log-in-as-a-user) | POST | yes |
+| [Login as user](#login-as-user) | POST | yes |
 
 ### Return a list of all restaurants
 | Method | Endpoint | Usage | Returns |
@@ -207,7 +207,7 @@ The post request will add a new user row to the user table based on the form inp
 
 ([back to summary](#summary))  
 
-### Login as a user
+### Login as user
 
 | Method | Endpoint | Usage | Returns |
 | ------ | -------- | ----- | ------- |
