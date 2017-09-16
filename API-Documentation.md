@@ -1,4 +1,4 @@
-# API Documentation - work in progress
+# API Documentation
 
 #### Authors
 
