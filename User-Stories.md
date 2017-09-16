@@ -4,7 +4,6 @@
 
 User Stories for the What's For Lunch app project.
 
-
 | As a user I want: | Require authentication? | Stretch? |
 | ------ | -------- | -------- |
 | View a list of vegetarian restaurants in Wellington | no | no |
