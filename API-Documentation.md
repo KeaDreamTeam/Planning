@@ -239,12 +239,3 @@ The post request will compare the username to the users table for a match. A use
 
 ([back to summary](#summary))  
 
-
-#### App Authors
-
-* Usha MacDonald
-* Magda Gierg
-* Ania Podhajska
-
-##### Document Author
-* Usha MacDonald
