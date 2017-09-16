@@ -1,9 +1,9 @@
-# API Documentation - work in progress
+# API Documentation
 
 #### Authors
 
 * Ania Podhajska
-* Magda Gierg
+* Magda Giergiczny
 * Usha MacDonald
 
 ## Summary
@@ -183,7 +183,7 @@ This post creates a new comment in the comments table, associating the user who 
 
 | Method | Endpoint | Usage | Returns |
 | ------ | -------- | ----- | ------- |
-| POST    | `/api/users/signup` | Create a user | boolean |
+| POST    | `/api/users/register` | Create a user | boolean |
 
 The post object must take the form:
 
@@ -238,3 +238,4 @@ The post request will compare the username to the users table for a match. A use
     }
 
 ([back to summary](#summary))  
+
